@@ -11,9 +11,15 @@ function square(num ) {
 square(3);
 
 function greet(person: string){
-    return `hi ther, ${person}!`
+    return `hi there, ${person}!`;
 }
 greet('jay') 
 
 const doSomething = (person: string, age: number, isFunny:boolean) => {};
 doSomething('chickenFace',76,true)
+
+function greet(person: string = "stranger"){
+    return `hi ther, ${person}!`;
+}
+greet()                 //default value..strager..addes if not param on greet
+greet("tony")
